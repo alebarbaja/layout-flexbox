@@ -41,7 +41,7 @@
   section {
 	flex-grow: 1;
 	width: 100%;
-	overflow: hidden;
+	// overflow: hidden;
   }
   
   p {
@@ -52,7 +52,13 @@
 	padding: 1em 0;
 	font-weight: 400;
 	line-height: 1.4em;
-  }
+	}
+	
+	@media screen and (max-width: 430px) {
+		p {
+			font-size: 1em;
+		}
+		}
   
   footer {
 	height: 5rem;
@@ -84,7 +90,13 @@
 	width: 100%;
 	text-align: center;
 	font-weight: 600;
-  }
+	}
+	
+	@media screen and (max-width: 430px) {
+		h1 {
+			font-size: 1.2em;
+		}
+		}
   
   code {
 	background-color: darkslategrey;
