@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Encode Sans Condensed', sans-serif;
+	background-color: gainsboro;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+  }
+  
+  header {
+	height: 10rem;
+	width: 100%;
+	background-image: url('http://lorempixel.com/1300/200/nature/3');
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 1px 5px black;
+  }
+  
+  .titulo {
+	font-size: 4em;
+	font-weight: 900;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	text-shadow: 0px 1px 15px black;
+	color: white;
+  }
+  
+  @media screen and (max-width: 430px) {
+	.titulo {
+	  font-size: 2.5em;
+	}
+  }
+  
+  section {
+	flex-grow: 1;
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  p {
+	width: 80%;
+	font-size: 1.1em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em 0;
+	font-weight: 400;
+	line-height: 1.4em;
+  }
+  
+  footer {
+	height: 5rem;
+	background-color: darksalmon;
+	width: 100%;
+	box-shadow: 1px 0px 5px black;
+  }
+  
+  footer nav {
+	width: 100%;
+	height: 100%;
+  }
+  
+  footer ul {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-weight: 600;
+  }
+  
+  footer ul li {
+	list-style-type: none;
+	cursor: pointer;
+  }
+  
+  h1 {
+	padding: 1em;
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+  }
+  
+  code {
+	background-color: darkslategrey;
+	color: blanchedalmond;
+	padding: 0.1em 0.2em;
+	margin: 0 0.1em;
+	font-size: .9em;
+  }  
