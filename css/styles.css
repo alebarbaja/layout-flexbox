@@ -1,81 +1,122 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
-  font-family: 'Encode Sans Condensed', sans-serif;
+  font-family: "Encode Sans Condensed", sans-serif;
   background-color: gainsboro;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
 
 header {
   height: 10rem;
   width: 100%;
-  background-image: url("http://lorempixel.com/1300/200/nature/3");
+  background-color: salmon;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 1px 5px black; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 1px 5px black;
+          box-shadow: 0px 1px 5px black;
+}
 
 .titulo {
   font-size: 4em;
   font-weight: 900;
-  font-family: 'Encode Sans Condensed', sans-serif;
+  font-family: "Encode Sans Condensed", sans-serif;
   text-shadow: 0px 1px 15px black;
-  color: white; }
+  color: white;
+}
 
 @media screen and (max-width: 430px) {
+  header {
+    height: 5rem;
+  }
   .titulo {
-    font-size: 2.5em; } }
+    font-size: 2.5em;
+  }
+}
 
 section {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 100%;
-  overflow: hidden; }
+  overflow: auto;
+}
 
 p {
-  width: 80%;
+  width: 90%;
   font-size: 1.1em;
   margin-left: auto;
   margin-right: auto;
   padding: 1em 0;
   font-weight: 400;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+}
 
 footer {
-  height: 5rem;
+  height: 4rem;
   background-color: darksalmon;
   width: 100%;
-  box-shadow: 1px 0px 5px black; }
+  -webkit-box-shadow: 1px 0px 5px black;
+          box-shadow: 1px 0px 5px black;
+}
 
 footer nav {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 footer ul {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-weight: 600; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: 600;
+}
 
 footer ul li {
   list-style-type: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 h1 {
-  padding: 1em;
+  font-size: 1.5em;
+  padding: 1em 1em 0;
   width: 100%;
   text-align: center;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 code {
   background-color: darkslategrey;
   color: blanchedalmond;
   padding: 0.1em 0.2em;
   margin: 0 0.1em;
-  font-size: .9em; }
+  font-size: 0.9em;
+}
